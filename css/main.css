@@ -332,10 +332,6 @@ main{
   font-family: "Source Sans Pro", sans-serif;
 }
 
-.project-description h1 {
-  font-weight: bold;
-}
-
 .tools-item {
   display: flex;
   justify-content: center;
@@ -475,3 +471,67 @@ textarea {
   transform: translateY(-65px) rotate(0);
   opacity: 1;
 }
+
+.submit-btn {
+  background: rgb(34, 33, 33);
+  color: #FFC800;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.submit-btn .icon {
+  background: #FFC800;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0em 0em 0.6em 0em #212529;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.submit-btn:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.submit-btn .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: black;
+}
+
+.submit-btn:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.submit-btn:active .icon {
+  transform: scale(0.95);
+}
+
+.submit-btn .icon img {
+  width: 1.1em;  
+  height: auto;
+  transition: transform 0.3s; 
+}
+
+.submit-btn:hover .icon img {
+  transform: translateX(0.1em);
+}
+

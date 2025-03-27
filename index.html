@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -14,10 +14,17 @@
         <nav> 
             <div class="nav-left-container">
                 <a href="#home" class="home-link">
-                <img src="img/about-profile.jpg" alt="about-profile">
-                <span>JOHN ANDRE B. GOMEZ</span>
+                    <img src="img/about-profile.jpg" alt="about-profile">
+                    <span>JOHN ANDRE B. GOMEZ</span>
                 </a>
             </div>
+           
+            <button class="mobile-menu-button" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
             <ul class="nav-list-container">  
                 <li class="nav-container"><a href="#home">HOME</a></li>
                 <li class="nav-container"><a href="#about">ABOUT</a></li>
@@ -26,7 +33,7 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <section id="home">
             <div class="text-overlay-heading">
@@ -198,6 +205,12 @@
                             <textarea id="fmessage" class="fmessage" placeholder="Enter your Message" required></textarea>
                         </div>
                     </form>
+                    <button class="submit-btn">
+                        Submit
+                        <div class="icon">
+                          <img src="img/arrow.png" alt="arrow" style="max-width: 80%; height: auto; display: block;">
+                        </div>
+                      </button>
                 </div>
 
                 <div class="social">
@@ -228,5 +241,7 @@
     <footer>
          
     </footer>
+
+    <script src="JS/script.js"></script>
 </body>
 </html>

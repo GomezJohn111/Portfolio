@@ -1,3 +1,14 @@
+.hidden {
+  opacity: 0;
+  transform: translateY(0.5rem);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 main{
     position: relative;
     width: 100%;
@@ -9,7 +20,7 @@ main{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-image: url("../img/header-bg.jpg");
+    background-image: url("../img/bg\(3\).webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -317,7 +328,6 @@ main{
 
 .project-img-container:hover img {
   transform: scale(1.1);
-   
 }
 
 .project-description {
@@ -535,3 +545,37 @@ textarea {
   transform: translateX(0.1em);
 }
 
+.contact-dtls {
+  margin-top: 9rem;
+  width: 150%;
+}
+
+.sub-contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left; 
+  margin-top: 2rem;
+
+}
+
+.sub-contact-container p{
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: large;
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+
+.sub-contact-container img {
+  width: 2.3rem;
+  height: auto;
+  margin-right: 7%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sub-contact-container img:hover {
+  transform: translateY(-0.5rem);
+}

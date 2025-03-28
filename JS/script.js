@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
         menuButton.classList.toggle('active');
     });
     
-    // Close menu when a nav link is clicked
     const navLinks = document.querySelectorAll('.nav-container a');
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
@@ -15,4 +14,23 @@ document.addEventListener('DOMContentLoaded', function() {
             menuButton.classList.remove('active');
         });
     });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll(".hidden");
+
+    function fadeInOnScroll() {
+        sections.forEach(section => {
+            const sectionTop = section.getBoundingClientRect().top;
+            const triggerPoint = window.innerHeight * 0.8;
+
+            if (sectionTop < triggerPoint) {
+                section.classList.add("show");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", fadeInOnScroll);
+    fadeInOnScroll(); 
 });
